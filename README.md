@@ -16,3 +16,8 @@ This repo contains official documentation for [Bitcaster](http://bitcaster.io)
 ### Build Doc
 
     make build
+    
+### Docker
+
+
+Pre built docker image can be found at  
