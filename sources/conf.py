@@ -26,7 +26,7 @@ html_theme_path = [sphinxbootstrap4theme.get_path()]
 # import sphinx_bootstrap_theme
 # html_theme = 'bootstrap'
 # html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
-html_logo = '../src/bitcaster/web/assets/bitcaster/logos/bitcaster100-bg-circle.png'
+html_logo = '_static/bitcaster100-bg-circle.png'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.

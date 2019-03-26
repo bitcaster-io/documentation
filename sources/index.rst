@@ -8,14 +8,14 @@ Welcome to Bitcaster's documentation!
 Contents:
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
 
     overview.rst
     terminology.rst
     sections.rst
     security.rst
-    dispatchers.rst
+    dispatchers/index.rst
     writing_plugins.rst
     contribute.rst
     glossary.rst
