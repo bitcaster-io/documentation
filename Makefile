@@ -1,13 +1,13 @@
 DOCKER_PASS?=
 DOCKER_USER?=
-TARGET?=0.1.0a
+TARGET?=0.1.0a1
 BUILD_DATE:="$(shell date +"%Y-%m-%d %H:%M")"
 
 # below vars are used internally
 BUILD_OPTIONS?=--squash
 CONTAINER_NAME?=bitcaster-docs
 DOCKER_IMAGE_NAME=bitcaster/bitcaster-docs
-DOCKER_IMAGE=${DOCKER_IMAGE_NAME}:${TARGET}
+DOCKER_IMAGE=bitcaster/bitcaster-docs:${TARGET}
 RUN_OPTIONS?=
 
 help:
@@ -31,16 +31,17 @@ docker: html
 	docker images | grep ${DOCKER_IMAGE_NAME}
 
 release:
-	pass docker/saxix | docker login -u saxix --password-stdin
-	docker tag ${DOCKER_IMAGE_NAME}:${TARGET} ${DOCKER_IMAGE_NAME}:latest
-	docker push ${DOCKER_IMAGE_NAME}:latest
-	docker push ${DOCKER_IMAGE_NAME}:${TARGET}
-	lazo rancher --insecure upgrade bitcaster:docs ${DOCKER_IMAGE}
+#	pass docker/saxix | docker login -u saxix --password-stdin
+#	docker tag ${DOCKER_IMAGE_NAME}:${TARGET} ${DOCKER_IMAGE_NAME}:latest
+#	docker push ${DOCKER_IMAGE_NAME}:latest
+#	docker push ${DOCKER_IMAGE_NAME}:${TARGET}
+	lazo rancher --insecure upgrade bitcaster:docs "${DOCKER_IMAGE}"
+
 	$(MAKE) bump
 
 
 bump:
-	cd .. && bumpversion --config-file=.bumpversion.cfg num --commit
+	bumpversion --config-file=.bumpversion.cfg num --commit
 
 .run:
 	docker run \
