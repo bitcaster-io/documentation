@@ -18,6 +18,7 @@ help:
 clean:
 	rm -fr html
 
+.PHONY: html
 html:
 	sphinx-build -aE sources/ ./html
 

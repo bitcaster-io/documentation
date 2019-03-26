@@ -40,6 +40,10 @@ Channel
 Dispatcher
 ----------
 
+A dispatcher is the software component that provide support for a specific :ref:`Channel`.
+Bitcaster comes out-of-box with a set of :ref:`dispatchers`.
+A plugin mechanism ensure the number of dispatcher is virtually limitless.
+
 
 .. _event:
 
@@ -58,6 +62,9 @@ Message
 
 Monitor
 -------
+
+Bitcaster has the capability of checking for events on some 3rd parties by using a
+software component named Monitor.
 
 .. _organization:
 

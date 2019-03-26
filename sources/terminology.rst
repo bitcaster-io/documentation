@@ -27,10 +27,10 @@ A channel represent a way that :ref:`Application` can use to propagate their :re
 Application
 ~~~~~~~~~~~
 
-As _Organization_ you can have multiple Applications.
+As :ref:`Organization` you can have multiple Applications.
 
 
 Event
 ~~~~~
 
-As _Organization_ you can have multiple Applications.
+As :ref:`Organization` you can have multiple Applications.
