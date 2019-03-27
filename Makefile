@@ -1,6 +1,6 @@
 DOCKER_PASS?=
 DOCKER_USER?=
-TARGET?=0.1.0a3
+TARGET?=0.1.0a4
 BUILD_DATE:="$(shell date +"%Y-%m-%d %H:%M")"
 
 # below vars are used internally
