@@ -15,7 +15,7 @@ terminology can be found in the :ref:`glossary`
 Organization
 ~~~~~~~~~~~~
 Organization is the primary subject in Bitcaster, it refers to your Company or Community,
-it is where all the Bitcaster users belogn to.
+it is where all the Bitcaster users belong to.
 
 
 Channel

@@ -12,6 +12,7 @@ Contents:
 
 
     overview.rst
+    journey.rst
     terminology.rst
     sections.rst
     security.rst
