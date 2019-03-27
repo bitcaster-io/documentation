@@ -29,10 +29,9 @@ its configuration
 Application
 -----------
 
-The Bitcaster organisational unit where to configure which :ref:`Channel` to make available and the
-:ref:`messagetemplate` to use for the :ref:`Event` to dispatch to dispatch in the form of a :ref:`Message` to the users
-
-Usually it proxy one or more :Ref:`remote_system`
+The Bitcaster is an organisational unit where to register a set of :ref:`Event`\s that will be notified by
+:ref:`remote_system`\s. Such :ref:`Event`\s will be then dispatched to :ref:`Subscriber`\s along the
+:ref:`Subscriber`'s preferred :ref:`Channel`.
 
 .. _assignment:
 
