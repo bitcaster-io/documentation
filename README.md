@@ -20,4 +20,4 @@ This repo contains official documentation for [Bitcaster](http://bitcaster.io)
 ### Docker
 
 
-Pre built docker image can be found at  
+Pre built docker image can be found in the [Docker Hub](https://cloud.docker.com/u/bitcaster/repository/docker/bitcaster/bitcaster-docs)

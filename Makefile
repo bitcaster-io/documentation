@@ -34,8 +34,7 @@ release:
 	pass docker/saxix | docker login -u saxix --password-stdin
 	docker tag ${DOCKER_IMAGE_NAME}:${TARGET} ${DOCKER_IMAGE_NAME}:latest
 	docker push ${DOCKER_IMAGE_NAME}:latest
-	docker push ${DOCKER_IMAGE_NAME}:${TARGET}
-	lazo rancher --insecure upgrade bitcaster:docs "${DOCKER_IMAGE}"
+	lazo rancher --insecure upgrade bitcaster:docs ${DOCKER_IMAGE_NAME}:latest
 
 	$(MAKE) bump
 
