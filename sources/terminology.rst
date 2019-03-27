@@ -33,4 +33,3 @@ As :ref:`Organization` you can have multiple Applications.
 Event
 ~~~~~
 
-As :ref:`Organization` you can have multiple Applications.

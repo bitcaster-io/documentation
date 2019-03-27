@@ -1,8 +1,8 @@
 .. include:: _globals
 .. _sections:
 
-Application Menu
-================
+Sections
+========
 
 
 Organization

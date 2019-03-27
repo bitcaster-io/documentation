@@ -1,4 +1,4 @@
-.. include:: _globals
+.. include:: ../_globals
 .. _dispatchers_gmail:
 
 .. image:: ../_static/icons/gmail.png

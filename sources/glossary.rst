@@ -38,13 +38,16 @@ Assignment
 Channel
 -------
 
+A channel represent a way that :ref:`Application` can use to propagate their :ref:`Event`
+
+
 .. _dispatcher:
 
 Dispatcher
 ----------
 
 A dispatcher is the software component that provide support for a specific :ref:`Channel`.
-Bitcaster comes out-of-box with a set of :ref:`Dispatchers`.
+Bitcaster comes out-of-box with a set of :ref:`dispatchers`.
 A plugin mechanism ensure the number of dispatcher is virtually limitless.
 
 
@@ -53,13 +56,14 @@ A plugin mechanism ensure the number of dispatcher is virtually limitless.
 Event
 -----
 
-Upon receival of a notification from a third party Bitcaster will generate an event that is dispatched
+An event represent a notification received by esternal System/Application.
+When remote system notify an event to Bitcaster it is forwared to the `subscriber`_ using their
+preferred `channel`_
 
 .. _membership:
 
 Membership
 ----------
-
 
 .. _message:
 
@@ -84,6 +88,11 @@ software component named Monitor.
 Organization
 ------------
 
+Organization is the primary subject in Bitcaster, it refers to your Company or Community,
+it is where all the Bitcaster users belogn to.
+
+
+
 .. _plugin:
 
 Plugin
@@ -95,6 +104,15 @@ A software component that can be deployed that can extend capabilities of Bitcas
 
 Role
 ----
+
+Bitcaster assigns to  each member a specific role.
+
+    - Superuser
+    - Owner
+    - Admin
+    - Subscriber
+
+See :ref:`security` for detailed informations about roles.
 
 
 .. _Remote System:
@@ -111,11 +129,20 @@ Bitcaster
 Subscriber
 ----------
 
+A `user`_ subscribed to an `event`_ using his preferred `channel`_
 
 .. _team:
+
 
 Team
 ----
 
-A team is a group of users that have been invited to subscribe to one or
-more :ref:`Application` :ref:`Event`
+A Team is a group of `user`_ inside a specific `application`_
+
+
+
+.. _user:
+
+
+User
+----

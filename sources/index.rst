@@ -14,8 +14,8 @@ Contents:
     overview.rst
     journey.rst
     terminology.rst
-    sections.rst
     security.rst
+    sections.rst
     dispatchers/index.rst
     writing_plugins.rst
     contribute.rst

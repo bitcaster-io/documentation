@@ -1,4 +1,4 @@
-.. include:: _globals
+.. include:: ../_globals
 .. _dispatchers_email:
 
 .. image:: ../_static/icons/email.png

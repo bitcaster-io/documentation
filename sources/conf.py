@@ -57,6 +57,7 @@ copyright = """2018-2019 OS4D ltd"""
 # built documents.
 #
 # The short X.Y version.0.1
+version = '0.1'
 # The full version, including alpha/beta/rc tags.
 release = '0.1'
 
