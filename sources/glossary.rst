@@ -13,10 +13,15 @@ Address
 
 An address in Bitcaster is any potential destination for the :ref:`Message`
 
+
+
 .. _agent:
 
 Agent
 -----
+
+Bitcaster component than contains the logic to poll an external system and trigger specific event based on
+its configuration
 
 
 .. _application:
@@ -26,6 +31,8 @@ Application
 
 The Bitcaster organisational unit where to configure which :ref:`Channel` to make available and the
 :ref:`messagetemplate` to use for the :ref:`Event` to dispatch to dispatch in the form of a :ref:`Message` to the users
+
+Usually it proxy one or more :Ref:`remote_system`
 
 .. _assignment:
 
@@ -47,7 +54,7 @@ Dispatcher
 ----------
 
 A dispatcher is the software component that provide support for a specific :ref:`Channel`.
-Bitcaster comes out-of-box with a set of :ref:`dispatchers`.
+Bitcaster comes out-of-box with a set of :ref:`Dispatchers`.
 A plugin mechanism ensure the number of dispatcher is virtually limitless.
 
 
@@ -59,6 +66,15 @@ Event
 An event represent a notification received by esternal System/Application.
 When remote system notify an event to Bitcaster it is forwared to the `subscriber`_ using their
 preferred `channel`_
+
+.. _key:
+
+Key
+---
+
+Unique token used by :ref:`remote_system` to trigger an `event`_.
+Each key is authorized to trigger only specific events.
+
 
 .. _membership:
 
@@ -98,7 +114,18 @@ it is where all the Bitcaster users belogn to.
 Plugin
 ------
 
-A software component that can be deployed that can extend capabilities of Bitcaster
+A software component that can be deployed that can extend capabilities of Bitcaster.
+It can be an implememtation of an :ref:`Agent` or :ref:`Dispatcher`
+
+
+.. _Remote_System:
+
+Remote System
+-------------
+
+A remote system is any third party system/application/script that is authorized to trigger :ref:`Event` in
+Bitcaster. It is usually mapped into Bitcaster using a single :ref:`Application`
+
 
 .. _role:
 
@@ -114,14 +141,6 @@ Bitcaster assigns to  each member a specific role.
 
 See :ref:`security` for detailed informations about roles.
 
-
-.. _Remote System:
-
-Remote System
--------------
-
-A remote system is any third party system/application/script that is authorized to trigger :ref:`Event` in
-Bitcaster
 
 
 .. _subscriber:

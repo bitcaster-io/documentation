@@ -17,6 +17,7 @@ Contents:
     security.rst
     sections.rst
     dispatchers/index.rst
+    agents/index.rst
     writing_plugins.rst
     contribute.rst
     glossary.rst
