@@ -11,6 +11,7 @@ transifex-client = "*"
 sphinx = "*"
 recommonmark = "*"
 sphinxbootstrap4theme = "*"
+sphinx-intl = "*"
 
 [requires]
 python_version = "3.6"

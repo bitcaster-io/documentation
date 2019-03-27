@@ -10,6 +10,14 @@ DOCKER_IMAGE_NAME=bitcaster/bitcaster-docs
 DOCKER_IMAGE=bitcaster/bitcaster-docs:${TARGET}
 RUN_OPTIONS?=
 
+# Internal variables.
+PAPEROPT_a4     = -D latex_paper_size=a4
+PAPEROPT_letter = -D latex_paper_size=letter
+ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
+# the i18n builder cannot share the environment and doctrees with the others
+I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS)
+
+
 help:
 	@echo "html             build docs"
 	@echo "docker           build docker image with docs"
@@ -52,4 +60,10 @@ bump:
 
 run:
 	$(MAKE) .run
+
+
+gettext:
+	sphinx-build -aE sources/  -b gettext $(I18NSPHINXOPTS) html/locale
+	@echo
+	@echo "Build finished. The message catalogs are in html/locale."
 

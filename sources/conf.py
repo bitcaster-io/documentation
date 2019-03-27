@@ -28,6 +28,9 @@ html_theme_path = [sphinxbootstrap4theme.get_path()]
 # html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_logo = '_static/bitcaster100-bg-circle.png'
 
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False     # optional.
+
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['recommonmark',
